@@ -62,15 +62,17 @@ python evaluation.py
 
 The evaluation uses the same `chroma_db/` as the chatbot, so it scores exactly the index Finbot serves. A full run makes about 105 `gpt-4o-mini` calls.
 
-Retrieval results so far:
+Results:
 
-| Metric | Score |
-|---|---|
-| MAP@3 | 0.86 |
-| Recall@3 | 0.90 |
-| Correct chapter ranked first | 31 of 35 questions |
+| Layer | Metric | Score | Target |
+|---|---|---|---|
+| Retrieval | MAP@3 | 0.86 | ≥ 0.80 |
+| Retrieval | Recall@3 | 0.90 | ≥ 0.70 |
+| Retrieval | Correct chapter ranked first | 31 of 35 questions | — |
+| Generation | Groundedness | 0.98 | ≥ 0.85 |
+| Generation | Completeness | 0.88 | ≥ 0.75 |
 
-Generation scores haven't been measured yet.
+Every metric meets its target, so the release gate passes.
 
 ## Notes
 

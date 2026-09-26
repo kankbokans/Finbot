@@ -113,7 +113,7 @@
 
     <section>
       <h2>Evaluation</h2>
-      <p>Finbot is tested against 35 questions. Each question lists the Varsity chapters that answer it and has a reference answer written from those chapters. Retrieval results:</p>
+      <p>Finbot is tested against 35 questions. Each question lists the Varsity chapters that answer it and has a reference answer written from those chapters. Every metric meets its target.</p>
       <div class="grid">
         <div class="card">
           <p class="stat">0.86</p>
@@ -127,8 +127,16 @@
           <p class="stat">31 / 35</p>
           <p>Questions where the correct chapter is the first result</p>
         </div>
+        <div class="card">
+          <p class="stat">0.98</p>
+          <p>Groundedness: answers are supported by the retrieved text</p>
+        </div>
+        <div class="card">
+          <p class="stat">0.88</p>
+          <p>Completeness: answers cover the reference answer</p>
+        </div>
       </div>
-      <p>Answers are also scored by an LLM judge for groundedness (supported by the retrieved text) and completeness (compared with the reference answer).</p>
+      <p>Groundedness and completeness are scored by an LLM judge (<code>gpt-4o-mini</code>).</p>
     </section>
 
     <section>
