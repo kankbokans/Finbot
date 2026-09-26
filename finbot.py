@@ -48,26 +48,33 @@ def get_urls(xml, name=None,data=None, verbose = False):
             urls.append(loc)
     return urls
 
-url = "https://zerodha.com/varsity/chapter-sitemap2.xml"
-xml= get_sitemap(url)
-urls =get_urls(xml, verbose=False)
-
-docs=[]
-for i, url in enumerate(urls):
-    loader = WebBaseLoader(url)
-    docs.extend(loader.load())
-    if i%10 == 0:
-        print("Loaded document index:", i)
-
 #Vectorstore and Retriever
+#Load the saved vector database if it exists; otherwise build and save it.
+#Delete the chroma_db folder to rebuild from the latest Varsity content.
+persist_directory = "chroma_db"
 
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-splits = text_splitter.split_documents(docs)
+if os.path.isdir(persist_directory):
+    vectorstore = Chroma(persist_directory=persist_directory, embedding_function=OpenAIEmbeddings())
+    print(f"Loaded vector database from {persist_directory}")
+else:
+    url = "https://zerodha.com/varsity/chapter-sitemap2.xml"
+    xml= get_sitemap(url)
+    urls =get_urls(xml, verbose=False)
 
-vectorstore = Chroma.from_documents(documents=splits,embedding=OpenAIEmbeddings())
+    docs=[]
+    for i, url in enumerate(urls):
+        loader = WebBaseLoader(url)
+        docs.extend(loader.load())
+        if i%10 == 0:
+            print("Loaded document index:", i)
+
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    splits = text_splitter.split_documents(docs)
+
+    vectorstore = Chroma.from_documents(documents=splits,embedding=OpenAIEmbeddings(),persist_directory=persist_directory)
+    print(f"Len docs: {len(docs)}, Len splits: {len(splits)}")
+
 retriever = vectorstore.as_retriever()
-
-print(f"Len docs: {len(docs)}, Len splits: {len(splits)}")
 
 #RAG Chain Setup
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
@@ -106,6 +113,17 @@ qa_prompt = ChatPromptTemplate.from_messages([
 
 question_answer_chain = create_stuff_documents_chain(llm,qa_prompt)
 rag_chain = create_retrieval_chain(history_aware_retriever,question_answer_chain)
+
+tools = [YahooFinanceNewsTool()]
+agent_test_prompt = "What is the latest news about Indian stock market like Infosys?"
+
+agent = create_agent(llm, tools)
+
+print("\n--- Running Agent (LangGraph) ---")
+result = agent.invoke({"messages":[HumanMessage(content=agent_test_prompt)]})
+
+#The last assistant message content:
+print(result["messages"][-1].content)
 
 #Gradio
 def predict(message, history):
@@ -159,18 +177,7 @@ with gr.Blocks() as demo:
 
     undo.click(undo_last, chatbot,chatbot)
 
-demo.launch(share=True, debug=False, prevent_thread_lock=True)
-demo.close()
-tools = [YahooFinanceNewsTool()]
-agent_test_prompt = "What is the latest news about Indian stock market like Infosys?"
-
-agent = create_agent(llm, tools)
-
-print("\n--- Running Agent (LangGraph) ---")
-result = agent.invoke({"messages":[HumanMessage(content=agent_test_prompt)]})
-
-#The last assistant message content:
-print(result["messages"][-1].content)
+demo.launch(share=True, debug=False)
 
 
 

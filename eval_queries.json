@@ -1,0 +1,284 @@
+[
+  {
+    "query_id": "Q1",
+    "question": "What role does SEBI play in the Indian stock market, and does it have a say in whether a company can do an IPO?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/who-are-the-different-actors-in-market/",
+      "https://zerodha.com/varsity/chapter/why-and-how-do-companies-list-and-what-is-an-ipo/"
+    ],
+    "category": "Stock Market Basics",
+    "reference_answer": "SEBI regulates the securities market in India. It sets the legal framework and regulates every entity in the market, and each entity can only operate within the framework SEBI prescribes. SEBI also regulates the IPO market and has the final word on whether a company can go public."
+  },
+  {
+    "query_id": "Q2",
+    "question": "What is a stock market index, and how are indices built in India?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/what-is-a-stock-market-index/"],
+    "category": "Stock Market Basics",
+    "reference_answer": "An index is a barometer of the whole economy. A rising index shows market participants are optimistic, and a falling index shows they are pessimistic. India's two main indices are the BSE Sensex and NSE's Nifty, and they are built using the free-float market capitalization method. Indices are used for information, benchmarking, trading and hedging, and there are also sector-specific indices."
+  },
+  {
+    "query_id": "Q3",
+    "question": "Why do stock prices go up and down every day?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/why-do-stock-prices-fluctuate/"],
+    "category": "Stock Market Basics",
+    "reference_answer": "The stock market is where buyers and sellers meet electronically to transact in shares, and different opinions make a market. News and events move stock prices daily. A mismatch between demand and supply also makes prices move."
+  },
+  {
+    "query_id": "Q4",
+    "question": "Why do companies go public through an IPO, and what should I read before applying for one?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/why-and-how-do-companies-list-and-what-is-an-ipo/"],
+    "category": "IPO",
+    "reference_answer": "Companies go public to raise funds, give early investors an exit, reward employees and gain visibility. A merchant banker works closely with the company through the IPO process, and most IPOs in India use a book-building process. Before investing, you should read the DRHP to learn everything about the company."
+  },
+  {
+    "query_id": "Q5",
+    "question": "How is a dividend declared, what do I need to do to receive it, and when do shares I buy actually show up in my demat account?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/understanding-corporate-actions-like-dividends-bonuses-and-buybacks/",
+      "https://zerodha.com/varsity/chapter/clearing-and-settlement-process-2/"
+    ],
+    "category": "Corporate Actions",
+    "reference_answer": "A dividend is a way of rewarding shareholders and is announced as a percentage of the stock's face value. To get the dividend, you must own the stock before the ex-dividend date. Equity settlement in India is on a T+1 basis, so shares you buy on trade day (T) appear in your demat account by the end of T+1."
+  },
+  {
+    "query_id": "Q6",
+    "question": "Why shouldn't I just keep my savings in cash? Why invest in assets like equity?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/why-should-you-invest/",
+      "https://zerodha.com/varsity/chapter/asset-allocation-an-introduction/"
+    ],
+    "category": "Investing Basics",
+    "reference_answer": "Currency is designed to lose value over time through inflation. RBI aims to keep inflation between 4% and 6%, and India ended 2020 with inflation close to 7%, so holding cash steadily erodes purchasing power. You preserve wealth by buying assets, and equity should be part of your investments if you want to beat inflation over the long run. Keep in mind that risk and return go together: higher risk brings higher return."
+  },
+  {
+    "query_id": "Q7",
+    "question": "What's the difference between trailing returns and rolling returns for a mutual fund?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/know-your-fund/"],
+    "category": "Mutual Funds",
+    "reference_answer": "Trailing returns are a fund's total return over the last 1, 3, 5 and 7 years, shown as annualised CAGR. They give you a single snapshot. Rolling returns calculate the 3-year (or 5-year) return starting from every day in the fund's history, so they show consistency across all possible entry and exit points. For example, a 3-year beat rate of 95% means the fund beat its benchmark in 95 of every 100 rolling 3-year periods."
+  },
+  {
+    "query_id": "Q8",
+    "question": "What is 'active share' in a mutual fund, and why is a low active share with a high expense ratio a warning sign?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/know-your-fund/"],
+    "category": "Mutual Funds",
+    "reference_answer": "Active share measures how different a fund's portfolio is from its benchmark. It runs from 0% (identical to the benchmark) to 100% (completely different), and is calculated as the sum of the absolute weight differences divided by 2. A low active share (below 30-40%) means the fund closely resembles the index. If it also has a high expense ratio, you are paying for active management you are not getting, and a cheaper index fund may be better."
+  },
+  {
+    "query_id": "Q9",
+    "question": "What is sequence risk, and how can I protect myself from it?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/asset-allocation-an-introduction/"],
+    "category": "Asset Allocation",
+    "reference_answer": "Sequence risk is the chance that all of an asset's negative years fall within your own investment period. Even if the Nifty has given a 10% CAGR over 20 years with negative returns in only 4 out of 10 years, a 5-year investor could hit all 4 bad years. This is why an average investor rarely sees average returns. A simple way to avoid it is to invest in a basket of assets whose returns are not correlated with each other."
+  },
+  {
+    "query_id": "Q10",
+    "question": "Should I use technical analysis or fundamental analysis for my investing?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/fundamental-analysis-vs-technical-analysis/",
+      "https://zerodha.com/varsity/chapter/setting-realistic-expectations/",
+      "https://zerodha.com/varsity/chapter/introduction-to-fundamental-analysis/"
+    ],
+    "category": "Technical Analysis",
+    "reference_answer": "Technical analysis works best for spotting short-term trades and helps identify entry and exit points using chart patterns. Fundamental analysis is used for long-term investments and helps separate investment-grade companies from junk companies. Varsity says both should coexist as part of your market strategy, and it calls a core-satellite approach to capital allocation prudent."
+  },
+  {
+    "query_id": "Q11",
+    "question": "What are the core assumptions behind technical analysis, and do candlestick patterns change any of them?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/key-assumption-of-technical-analysis/",
+      "https://zerodha.com/varsity/chapter/understanding-candlestick-patterns/"
+    ],
+    "category": "Technical Analysis",
+    "reference_answer": "Technical analysis rests on four core assumptions: markets discount everything, the 'how' matters more than the 'why', price moves in trends, and history tends to repeat itself. For candlestick patterns, the 'history tends to repeat itself' assumption is modified by adding a factor angle. Candlesticks also have three assumptions of their own: buy strength and sell weakness, be flexible (quantify and verify), and look for a prior trend."
+  },
+  {
+    "query_id": "Q12",
+    "question": "I spotted a bullish marubozu on a chart. How do I trade it, and where does my stoploss go?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/single-candlestick-patterns/"],
+    "category": "Technical Analysis",
+    "reference_answer": "A bullish marubozu indicates bullishness. Buy around its closing price and keep the low of the marubozu as the stoploss. An aggressive trader can place the trade on the same day the pattern forms. A risk-averse trader can wait until the next day to make sure it obeys rule 1, 'buy strength and sell weakness'. Candles of abnormal length should not be traded."
+  },
+  {
+    "query_id": "Q13",
+    "question": "What's the difference between a company's P&L statement and its cash flow statement?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/understanding-the-pl-statement/",
+      "https://zerodha.com/varsity/chapter/understanding-the-cash-flow-statement/"
+    ],
+    "category": "Fundamental Analysis",
+    "reference_answer": "The P&L statement shows the company's profitability for the year. It is an estimate, because the company can revise the numbers later. The cash flow statement shows the company's actual cash position. Net cash flow is the sum of cash flows from operating, investing and financing activities, and investors should look especially at cash flow from operating activities."
+  },
+  {
+    "query_id": "Q14",
+    "question": "On a balance sheet, what is the difference between current and non-current assets, and how is Net Block calculated?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/understanding-the-balance-sheet-statement/"],
+    "category": "Fundamental Analysis",
+    "reference_answer": "Non-current assets have a useful life expected to last beyond 365 days (12 months). Current assets are expected to pay off within 365 days (12 months). Assets inclusive of depreciation are called the Gross Block, and Net Block = Gross Block minus Accumulated Depreciation."
+  },
+  {
+    "query_id": "Q15",
+    "question": "What does Return on Equity tell me, and is a high ROE always a good sign?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/the-financial-ratio-analysis/"],
+    "category": "Fundamental Analysis",
+    "reference_answer": "ROE shows how much return shareholders are making on their initial investment in the company. A high ROE is not always good: a high ROE combined with high debt is not a great sign. Like any ratio, ROE says little on its own and should be compared with its recent trend or with peers in the same industry."
+  },
+  {
+    "query_id": "Q16",
+    "question": "In an annual report, what's the difference between standalone and consolidated financial statements?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/how-to-read-the-annual-report-of-a-company/"],
+    "category": "Fundamental Analysis",
+    "reference_answer": "Standalone statements contain the financial numbers of only the company itself. Consolidated statements contain the numbers of the company and its subsidiaries. The annual report includes three financial statements: the Profit & Loss Statement, the Balance Sheet and the Cash Flow Statement."
+  },
+  {
+    "query_id": "Q17",
+    "question": "Why should a long-term investor stay invested for a long time, and what aspects should they evaluate before investing?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/mindset-of-an-investor/"],
+    "category": "Fundamental Analysis",
+    "reference_answer": "An investor should stay invested for an extended period so that returns can compound. A property of compounding is that the longer you stay invested, the faster your money doubles. Every investment should be evaluated on two aspects. The qualitative aspect covers non-numeric information about the company, and the quantitative aspect covers numeric data, for which financial statements are an essential source."
+  },
+  {
+    "query_id": "Q18",
+    "question": "What are the main risks of a forward contract, and how is a futures contract different?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/background-forwards-market/",
+      "https://zerodha.com/varsity/chapter/introducing-the-futures-contract/"
+    ],
+    "category": "Futures",
+    "reference_answer": "A forward is a private OTC agreement, and it carries liquidity risk, default (counterparty) risk, regulatory risk and rigidity. There is no regulatory authority governing it, and it cannot easily be modified or terminated before expiry. A futures contract improves on the forward: it is tradable, standardized with all agreement variables predetermined, and regulated by SEBI in India."
+  },
+  {
+    "query_id": "Q19",
+    "question": "What is open interest and when does it go up or down?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/open-interest-2/"],
+    "category": "Futures",
+    "reference_answer": "Open Interest (OI) is the number of contracts currently outstanding (open) in the market. OI rises when new contracts are added and falls when contracts are squared off. It does not change when contracts pass from one party to another. Unlike volume, OI is continuous data, and it should be read together with price. Abnormally high OI points to high leverage."
+  },
+  {
+    "query_id": "Q20",
+    "question": "What's the difference between shorting in the spot market and shorting futures?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/shorting-futures/"],
+    "category": "Futures",
+    "reference_answer": "Shorting means selling first and buying later, so the trade makes money only if the closing price is below the entry price. The stop loss always sits above the shorting price. In the spot market you can short only intraday and cannot carry the position overnight. A short futures position can be carried forward overnight, and its margins and M2M work the same way as for a long trade."
+  },
+  {
+    "query_id": "Q21",
+    "question": "How do I know if a call or put option is ITM, ATM or OTM?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/moneyness-of-option/"],
+    "category": "Options",
+    "reference_answer": "An option with intrinsic value is In the Money (ITM), and one with no intrinsic value is Out of the Money (OTM). If the strike is almost equal to the spot price, the option is At the Money (ATM). For calls, strikes below ATM are ITM and strikes above are OTM; for puts it is the reverse. A call's intrinsic value is Spot minus Strike, a put's is Strike minus Spot, and ITM premiums are always higher than OTM premiums."
+  },
+  {
+    "query_id": "Q22",
+    "question": "How do I calculate the breakeven and P&L when buying a put option?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/put-buy-and-put-sell/"],
+    "category": "Options",
+    "reference_answer": "A put buyer makes money only when the underlying falls in value. The P&L is [Max(0, Strike Price – Spot Price)] – Premium Paid. The breakeven point is Strike – Premium Paid."
+  },
+  {
+    "query_id": "Q23",
+    "question": "How are delta and gamma related, and what values does delta take?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/the-option-greeks-delta/",
+      "https://zerodha.com/varsity/chapter/gamma/"
+    ],
+    "category": "Option Greeks",
+    "reference_answer": "Delta captures the effect of market direction on the premium. It ranges from 0 to 1 for calls and from -1 to 0 for puts; ATM options have a delta of 0.5, ITM close to 1 and OTM close to 0. Delta is the 1st order derivative of the premium and changes as the underlying moves. Gamma is the 2nd order derivative and measures the rate of change of delta. Gamma is always positive for both calls and puts, and a large gamma means large directional risk."
+  },
+  {
+    "query_id": "Q24",
+    "question": "Why is theta called a friendly Greek for option sellers?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/theta-2/"],
+    "category": "Option Greeks",
+    "reference_answer": "Premium = Intrinsic Value + Time Value. All else equal, options lose value every day because of theta, which is why sellers are compensated for the time risk. If you short an option at the start of the series, you collect a large time value but the premium falls slowly. If you short close to expiry, the premium is low but it falls rapidly."
+  },
+  {
+    "query_id": "Q25",
+    "question": "Why should volatility be high when setting up a short straddle?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/the-straddle/",
+      "https://zerodha.com/varsity/chapter/vega-2/"
+    ],
+    "category": "Option Strategies",
+    "reference_answer": "A short straddle means selling the ATM call and put together, with the same underlying, strike and expiry, as a bet that the market will stay in a range. Its breakevens are strike + net premium and strike – net premium. Vega measures how the premium changes with volatility, and all options gain premium when volatility rises. So you should enter when volatility is relatively high and want it to fall while you hold, for example around significant events."
+  },
+  {
+    "query_id": "Q26",
+    "question": "What is a bull call spread and when should I use it?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/bull-call-spread-2/"],
+    "category": "Option Strategies",
+    "reference_answer": "A bull call spread is a basic spread for a moderately bullish outlook, meaning you expect a move but not an aggressive one. You judge what counts as 'moderate' from the volatility of the stock or index. The classic version buys an ATM call and sells an OTM call with the same expiry, same underlying and equal quantity. Theta matters in choosing strikes, and the risk-reward shifts depending on the strikes you pick."
+  },
+  {
+    "query_id": "Q27",
+    "question": "Why do you multiply interest by (1 - tax rate) when calculating FCFF, and how does the same idea change a company's WACC?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/valuation-part-3-risk-premium-tax-shield/",
+      "https://zerodha.com/varsity/chapter/weighted-average-cost-of-capital-and-terminal-growth/"
+    ],
+    "category": "Valuation",
+    "reference_answer": "Paying interest lowers a company's tax outflow. This is called the tax shield, so when interest is added back to PAT to get FCFF, it is added as Interest × (1 – tax). For example, 70 Cr of interest at a 25% tax rate is added back as 52.5 Cr. In WACC, the cost of debt is replaced by the effective cost of debt, which is Cost of Debt × (1 – Tax rate). With an 8% cost of debt and 30% tax, that is 5.6%, and it lowers the example WACC from 9.6% to 8.16%."
+  },
+  {
+    "query_id": "Q28",
+    "question": "In a DCF model, what growth rate should I use for terminal value and how is its present value calculated?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/weighted-average-cost-of-capital-and-terminal-growth/"],
+    "category": "Valuation",
+    "reference_answer": "The model analyses cash flows in detail for the first five years. After that, it assumes cash flows grow at a terminal value growth rate, which is usually equal to the country's long-term inflation. The present value of terminal value is C(1+g)/(r-g), where C is today's cash, g is the growth rate and r is the discount rate (cost of equity or WACC). DCF is very sensitive to terminal value, and it does not work if cash flows are negative."
+  },
+  {
+    "query_id": "Q29",
+    "question": "How do I judge a bank's asset quality using GNPA, NNPA and PCR?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/banking-part-2/"],
+    "category": "Sector Analysis",
+    "reference_answer": "The GNPA ratio is the money borrowers failed to repay on time, divided by gross total loans. Net NPA is GNPA minus the provisions the bank has set aside. The Provision Coverage Ratio (PCR) is the percentage of GNPAs covered by provisions. Lower NPAs are better, and a higher PCR eats into profits but shows the bank is prudent and conservative."
+  },
+  {
+    "query_id": "Q30",
+    "question": "What is the clinker factor in cement companies and why is a lower one better?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/cement/"],
+    "category": "Sector Analysis",
+    "reference_answer": "The clinker factor is the proportion of clinker in a cement recipe. Lower is better because making clinker is the most fuel-consuming step in cement production. Manufacturers use fly ash, gypsum, silica fume and other industrial by-products in blended cement to keep its strength. Cement makers also run waste heat recovery systems (WHRS), which can supply 25-30% of a plant's power needs."
+  },
+  {
+    "query_id": "Q31",
+    "question": "What tax deductions can I claim for investing in NPS under sections 80CCD(1), 80CCD(1B) and 80CCD(2)?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/nps-tax-rules-benefits/"],
+    "category": "NPS & Retirement",
+    "reference_answer": "Section 80CCD(1) allows a deduction of up to 10% of salary (basic + DA) or ₹1.5 lakh, whichever is lower, within the overall Section 80C limit. For the self-employed, the limit is 20% of gross income. Section 80CCD(1B) gives an extra deduction of up to ₹50,000 above the 80C limit. Both apply only under the old regime and only to Tier-I. Under 80CCD(2), employer contributions of up to 10% of salary (old regime) or 14% (new regime) are not taxed."
+  },
+  {
+    "query_id": "Q32",
+    "question": "When I exit NPS at 60, how much can I take as a lump sum and will it be taxed?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/exit-withdrawals/",
+      "https://zerodha.com/varsity/chapter/nps-tax-rules-benefits/"
+    ],
+    "category": "NPS & Retirement",
+    "reference_answer": "At retirement, at least 20% of the corpus must be used to buy an annuity, and the rest can be withdrawn as a lump sum. If the corpus is ₹8 lakh or less, you can withdraw 100% as a lump sum. The tax chapter says there is no tax on the withdrawal up to 60% of the value. The annuity income you receive each year is taxed at your slab rate."
+  },
+  {
+    "query_id": "Q33",
+    "question": "What is the minimum contribution for NPS Vatsalya for my child, and do I get a tax benefit?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/nps-vatsalya/"],
+    "category": "NPS & Retirement",
+    "reference_answer": "The minimum contribution to open the account, and the minimum each year, is ₹250. Parents can claim a deduction under Section 80CCD(1B), but the ₹50,000 limit is shared between Tier 1 and Vatsalya contributions combined. It is available only under the old tax regime, from FY25 (from April 1, 2025). When the child turns 18 and completes KYC, the account moves to the All Citizen Model (Tier I)."
+  },
+  {
+    "query_id": "Q34",
+    "question": "If I buy a ZCZP instrument on the Social Stock Exchange, do I get returns, and which NPOs can raise money this way?",
+    "relevant_doc_ids": [
+      "https://zerodha.com/varsity/chapter/social-stock-exchanges-an-introduction/",
+      "https://zerodha.com/varsity/chapter/who-can-raise-funds-on-sse/"
+    ],
+    "category": "Social Stock Exchange",
+    "reference_answer": "Buying a Zero Coupon Zero Principal (ZCZP) security is a donation to the social enterprise. The security in your demat account is symbolic and gives no monetary returns. To raise funds, an NPO must first register on the SSE and show social intent, for example through one of 16 welfare activities aimed at an underserved population. It must also have existed for three years as a trust, society or Section 8 company, and the registration is valid for only 12 months."
+  },
+  {
+    "query_id": "Q35",
+    "question": "Is it worth accepting a 20% co-payment clause in health insurance to get a lower premium?",
+    "relevant_doc_ids": ["https://zerodha.com/varsity/chapter/skin-in-the-game/"],
+    "category": "Behavioural Finance",
+    "reference_answer": "Insurers use co-payment to give you skin in the game, so you share the bill and spend less. In the chapter's example, a 20% co-pay saves about ₹1,800 a year on a ₹5 lakh cover. A ₹2 lakh hospital bill then costs ₹40,000 out of pocket, which would take about 22 years of premium savings to recover. The chapter says co-payments seldom make sense unless they are mandatory or the policy is for an older person with pre-existing diseases."
+  }
+]

@@ -66,6 +66,7 @@
       overflow-x: auto;
       font-size: 0.9rem;
     }
+    .stat { font-size: 2rem; font-weight: 700; margin: 0 0 4px; }
     footer { padding: 40px 0; text-align: center; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
     footer a { color: var(--accent); }
   </style>
@@ -104,10 +105,30 @@
       <h2>How it works</h2>
       <ol class="steps">
         <li><strong>Load:</strong> reads the Varsity chapter sitemap and downloads every chapter page.</li>
-        <li><strong>Index:</strong> splits pages into 1,000-character chunks, embeds them with OpenAI embeddings, and stores them in a Chroma vector store.</li>
+        <li><strong>Index:</strong> splits pages into 1,000-character chunks, embeds them with OpenAI embeddings, and saves them in a local Chroma database, so later runs start in seconds.</li>
         <li><strong>Retrieve:</strong> finds the chunks most relevant to your question, taking chat history into account.</li>
         <li><strong>Answer:</strong> <code>gpt-4o-mini</code> writes a concise answer from the retrieved chunks, in three sentences or fewer.</li>
       </ol>
+    </section>
+
+    <section>
+      <h2>Evaluation</h2>
+      <p>Finbot is tested against 35 questions. Each question lists the Varsity chapters that answer it and has a reference answer written from those chapters. Retrieval results:</p>
+      <div class="grid">
+        <div class="card">
+          <p class="stat">0.86</p>
+          <p>MAP@3: relevant chapters are found and ranked near the top</p>
+        </div>
+        <div class="card">
+          <p class="stat">0.90</p>
+          <p>Recall@3: share of relevant chapters found in the top three</p>
+        </div>
+        <div class="card">
+          <p class="stat">31 / 35</p>
+          <p>Questions where the correct chapter is the first result</p>
+        </div>
+      </div>
+      <p>Answers are also scored by an LLM judge for groundedness (supported by the retrieved text) and completeness (compared with the reference answer).</p>
     </section>
 
     <section>
@@ -131,7 +152,8 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 echo OPENAI_API_KEY=your-key-here &gt; .env
-python finbot.py</code></pre>
+python finbot.py
+python evaluation.py</code></pre>
       <p>You'll need your own OpenAI API key. See the <a href="https://github.com/kankbokans/Finbot#readme">README</a> for full setup details.</p>
     </section>
   </div>
